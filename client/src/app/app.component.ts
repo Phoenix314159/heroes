@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   title = 'Tour of Heroes';
-  heroes: Hero[];
+  heroes: any = [];
   selectedHero: Hero;
 
   onSelect(hero: Hero): void {
@@ -27,9 +27,8 @@ export class AppComponent implements OnInit {
   getHeroes() {
     this.heroService.getHeroes()
       .subscribe(
-        heroes => {
-          console.log(heroes);
-          this.heroes = heroes
+        (heroes) => {
+          this.heroes = heroes;
         },
         error => this.errorMessage = error
       )

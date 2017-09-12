@@ -5,13 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { KeysPipe } from './arrayPipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent,
-    KeysPipe
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
