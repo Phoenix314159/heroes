@@ -1,8 +1,11 @@
-<div *ngIf="selectedHero" class="center">
-  <div><h2>{{selectedHero.name}} details!</h2></div>
-  <div><label>id: </label>{{selectedHero.id}}</div>
-  <div>
-    <label>name: </label></div>
-  <div><input [(ngModel)]="selectedHero.name" placeholder="name"/></div>
-
+<div class="flex">
+  <div *ngIf="hero" class="jumbotron center">
+    <h2>{{hero.name}} details!</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <div>
+      <label>name: </label>
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </div>
+  </div>
 </div>
+

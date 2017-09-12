@@ -1,0 +1,7 @@
+.center {
+  text-align: center;
+  width: 50%; }
+
+.flex {
+  display: flex;
+  justify-content: center; }
