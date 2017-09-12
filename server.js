@@ -3,7 +3,7 @@ const express = require('express'),
     path = require('path'),
     port = process.env.PORT || '3045';
 
-
+require('./routes/getHeroes')(app);
 
 //<---------- production ----------->
 // if (process.env.NODE_ENV === 'production') {
